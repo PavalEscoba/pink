@@ -1,0 +1,38 @@
+@mixin clear{
+	&::before, &::after{
+		display: table;
+		content: '';
+	}
+	&:after{
+		clear: both;
+	}
+}
+@mixin inline($valign: top){
+	display: inline-block;
+	vertical-align: $valign;
+}
+@mixin container{
+	width: 320px;
+	margin: 0 auto;
+	
+	@media ($tablet-width){
+		width: 640px;	
+	}
+	@media ($desktop-width){
+		width: 900px;
+	}	
+}
+ 
+@function rem($px){
+	@return $px/16px + 0rem;
+}
+@mixin btn($width: 280px){
+	width: $width;
+	font-size: 18px;
+	font-family: Open Sans Bold, Arial Bold, sans-serif;
+	padding: 19px 0;
+	border: 3px solid #d22856;
+	border-radius: 25px;
+	text-align: center;
+	color: #d22856;
+}

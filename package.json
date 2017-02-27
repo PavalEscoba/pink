@@ -1,0 +1,30 @@
+{
+  "name": "pink",
+  "version": "1.0.0",
+  "description": "pink HTML Academy ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Paval Miatlitski",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-cache": "^0.4.5",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "imagemin-pngquant": "^5.0.0"
+  },
+  "keywords": [
+    "Practice",
+    "portfolio",
+    "html",
+    "css",
+    "js"
+  ]
+}

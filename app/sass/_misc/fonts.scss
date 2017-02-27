@@ -1,0 +1,27 @@
+@font-face{
+	font-family: 'Open Sans Regular';
+	src: url('/fonts/opensans.woff'),
+		 url('/fonts/opensans.woff2');
+}
+@font-face{
+	font-family: 'Open Sans Light';
+	src: url('opensanslight.woff'),
+		 url('opensanslight.woff2');
+}
+@font-face{
+	font-family: 'Open Sans Bold';
+	src: url('opensansbold.woff'),
+		 url('opensansbols.woff2');
+}
+
+@mixin font($style){
+	@if $style==regular{
+		font-family: 'Open Sans Regular';
+	}
+	@else if $style==bold{
+		font-family: 'Open Sans Bold';
+	}
+	@else if $style==light{
+		font-family: 'Open Sans Light';
+	}
+}

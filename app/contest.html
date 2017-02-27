@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="app/css/main.css">
+</head>
+<body>
+    <header class="page-header">
+        <div class="page-header__logo">
+            <img src="" alt="PINK-application">
+        </div>
+        <nav class="main-nav">
+            <span class="main-nav__toggle main-nav__toggle--closed">Открыть меню</span>
+            <div class="main-nav__wrapper  main-nav__wrapper--closed">
+
+                <ul class="main-nav__list">
+                    <li class="main-nav__item main-nav__item--active">
+                        <a href="index.html">Главная</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="photos.html">Фотографии</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="contest.html">Конкурс</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a href="htmlacademy.ru">HTML Academy</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="page-header__tagline">
+            <p>Конкурс на самое безбашенное путешествие с Пинк</p>
+        </div>
+    </header>
+    <section class="invitation">
+        <div class="invitation__title">
+            <p>
+                Поделитесь своей историей и получите шанс выиграть ценный приз —
+                1000 миль на вашу бонусную карту!
+                Пожалуйста, заполните форму ниже:
+            </p>
+        </div>
+    </section>
+    <section class="form">
+        <div class="form__wrapper">
+            <form class="form__personal" name="personsData" method="post">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" placeholder="Введите ваше имя">
+                <label for="surname">Фамилия:</label>
+                <input type="text" id="surname" placeholder="Укажите фамилию">
+                <label for="fathers">Отчество:</label>
+                <input type="text" id="fathersName" placeholder="Ну и отчество тоже">
+                <fieldset class="application-type">
+                    <legend> С каким приложением путешествовали?</legend>
+                    <label for="iOS"> Pink для iOS </label>
+                        <input type="radio" name="platform" value="iOS" id="iOS">
+
+                    <label for="Android"> Pink на Android </label>
+                        <input type="radio" name="platform" value="Android" id="Android">
+
+                    <label for="WinPhone"> Windows Phone </label>
+                        <input type="radio" name="platform" value="WinPhone" id="WinPhone">
+                </fieldset>
+                <fieldset class="contacts">
+                    <legend>Контактная информация</legend>
+                    <label for="telephone">
+                        <input type="tel" id="telephone" placeholder="+7 XXX XXX-XX-XX"><img src="" alt="" class="contacts__icon">
+                        Номер телефона
+                    </label>
+                    <label for="email">
+                        <input type="email" id="email" placeholder="введите почту"><img src="" alt="" class="contacts__icon">
+                        Адрес почты
+                    </label>
+                </fieldset>
+                <fieldset class="photo-list">
+                    <legend>Ваши безбашенные достижения</legend>
+                    <label for="shark">
+                        <input type="checkbox" id="shark"> Сделал селфи с акулой
+                    </label>
+                    <label for="chucks">
+                        <input type="checkbox" id="chucks"> Видел Чака Норриса
+                    </label>
+                    <label for="tower">
+                        <input type="checkbox" id="tower"> Удержал башню
+                    </label>
+                    <label for="beach">
+                        <input type="checkbox" id="beach"> Обгорел на пляже
+                    </label>
+                    <label for="souvenirs">
+                        <input type="checkbox" id="souvenirs"> Накупил сувениров
+                    </label>
+                    <label for="hotel">
+                        <input type="checkbox" id="hotel"> Разгромил отель
+                    </label>
+                </fieldset>
+                <fieldset class="emotions">
+                    <legend>Опишите свои эмоции</legend>
+                        <textarea name="emotion" id="emotion" cols="100" rows="10" placeholder="">
+                         Можно прям в красках, не стесняясь в выражениях
+                        </textarea>
+                </fieldset>
+                <input type="submit" value="ОТПРАВИТЬ ФОРМУ">
+                <p class="required-mark">
+                    * - обязательные поля
+                </p>
+            </form>
+        </div>
+    </section>
+    <footer class="page-footer">
+        <div class="page-footer__wrapper">
+            <section class="page-footer__logo">
+                <img src="" alt="">
+            </section>
+            <section class="page-footer__socials">
+                <a href="#" class="social-link social-link--tw"></a>
+                <a href="#" class="social-link social-link--fb"></a>
+                <a href="#" class="social-link social-link--youtube"></a>
+            </section>
+            <section class="page-footer__copyright">
+                <span>Разработано</span><img src="#" alt="logo-of-mine">
+            </section>
+        </div>
+    </footer>
+</body>
+</html>
