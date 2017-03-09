@@ -12,14 +12,15 @@
 	vertical-align: $valign;
 }
 @mixin container{
-	width: 320px;
-	margin: 0 auto;
+	width: auto;
 	
 	@media ($tablet-width){
-		width: 640px;	
+		width:88%;
+		max-width: 960px;
+		margin: 0 auto;	
 	}
 	@media ($desktop-width){
-		width: 900px;
+		max-width: 1200px;
 	}	
 }
  
@@ -35,4 +36,27 @@
 	border-radius: 25px;
 	text-align: center;
 	color: #d22856;
+}
+
+@mixin dpi{
+	@media (min-resolution:144dpi), (min-resolution: 1.5dppx){
+		@content;
+	}
+}
+
+@mixin desktop{
+	@media screen and (min-width: 1200px){
+		@content;
+	}
+}
+
+@mixin tablet{
+	@media screen and (min-width: 701px){
+		@content;
+	}
+}
+@mixin mobile{
+	@media screen and (max-width:700px){
+		@content;
+	}
 }
